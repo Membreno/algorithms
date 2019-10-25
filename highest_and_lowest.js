@@ -20,3 +20,10 @@ function highAndLow(string) {
   }
   return makeResult(max, min);
 }
+
+// Alternative Solution using Math methods
+
+function highAndLow2(numbers) {
+  numbers = numbers.split(' ');
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+}
