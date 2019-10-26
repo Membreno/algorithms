@@ -19,10 +19,14 @@ function removeSmallest(numbers) {
   return result;
 }
 
-
 // Testing Code
-
 console.log( removeSmallest([1, 2, 3, 4, 5]) ) // expected result [2, 3, 4, 5]
 console.log( removeSmallest([5, 3, 2, 1, 4]) ) // expected result [5, 3, 2, 4]
 console.log( removeSmallest([2, 2, 1, 2, 1]) ) // expected result [2, 2, 2, 1]
 console.log( removeSmallest([]) ) // expected result []
+
+// Alternative solution
+function removeSmallest2(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
