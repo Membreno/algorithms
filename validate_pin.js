@@ -18,6 +18,18 @@ function validatePIN(pin) {
   return false;
 }
 
+// Alternative Solution
+function validatePIN2(pin) {
+  var pinlength = pin.length;
+  var isCorrectLength = (pinlength == 4 || pinlength == 6);
+  var hasOnlyNumbers = pin.match(/^\d+$/);
+
+  if (isCorrectLength && hasOnlyNumbers) {
+    return true;
+  }
+  return false;
+}
+
 
 // Test Code
 console.log(validatePIN("1243")); // True
