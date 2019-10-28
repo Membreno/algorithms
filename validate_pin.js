@@ -25,3 +25,15 @@ console.log(validatePIN("123")); // False
 console.log(validatePIN("ab12")); // False
 console.log(validatePIN("124355")); // True
 console.log(validatePIN('-1.234')); // False
+
+// Alternative Solution
+function validatePIN2(pin) {
+  var pinlen = pin.length;
+  var isCorrectLength = (pinlen == 4 || pinlen == 6);
+  var hasOnlyNumbers = pin.match(/^\d+$/);
+
+  if (isCorrectLength && hasOnlyNumbers) {
+    return true;
+  }
+  return false;
+}
