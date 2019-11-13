@@ -22,7 +22,6 @@ function high(x) {
 
   for (let i = 0; i < words.length; ++i) {
     let tempValue = 0;
-
     for (let letter of words[i]) {
       if (alphabet[`${letter}`]) {
         tempValue += alphabet[`${letter}`];
