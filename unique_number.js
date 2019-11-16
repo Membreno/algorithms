@@ -5,7 +5,7 @@ function findUniq(array) {
   for (let num of array) {
     numCount[`${num}`] = numCount[`${num}`] === undefined ? 0 : numCount[`${num}`] + 1;
   }
-  return Number(Object.keys(numCount).find(key => numCount[key] === 0));
+  return Number(Object.keys(numCount).find(value => numCount[value] === 0));
 }
 
 // Tests
