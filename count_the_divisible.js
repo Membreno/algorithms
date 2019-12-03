@@ -18,3 +18,8 @@ console.log(divisibleCount(6,11,2)) // Expected Result 3
 console.log(divisibleCount(11,345,17)) // Expected Result 20
 console.log(divisibleCount(20,20,2)) // Expected Result 1
 console.log(divisibleCount(20,20,8)) // Expected Result 0
+
+// Alternate Solution w/ faster runtime
+function divisibleCount2(x, y, k) {
+  return Math.floor(y / k) - Math.floor((x - 1) / k)
+}
