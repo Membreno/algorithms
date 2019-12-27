@@ -55,3 +55,9 @@ console.log(mixedFraction('-10/7')) // -1 3/7
 console.log(mixedFraction("42/9")) // 4 2/3
 console.log(mixedFraction("6/3")) // 2
 console.log(mixedFraction("4/6")) // 2/3
+
+// PENDING TEST
+console.log(mixedFraction("-22/-7")) // 3 1/7
+console.log(mixedFraction("0/0")) // ZeroDivisionError
+console.log(mixedFraction("3/0")) // ZeroDivisionError
+console.log(mixedFraction("678/-788")) // -339/394
